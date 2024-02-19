@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "655191329472",
+    "project_id": "register-farmer-1e795",
+    "storage_bucket": "register-farmer-1e795.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655191329472:android:ca5731c4a8174d68747b25",
+        "android_client_info": {
+          "package_name": "com.example.earthworm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh2JMWOb1fwemP2RdYs1rGxX9-Ru9ZZ3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

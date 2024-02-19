@@ -1,0 +1,2 @@
+// lib/config.dart
+const String googleApiKey = 'AIzaSyAdsaSrCvWk8vtb2FDZEi1ikqlfS1038JQ'
