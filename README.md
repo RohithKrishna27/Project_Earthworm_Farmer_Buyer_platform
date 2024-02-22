@@ -1,4 +1,5 @@
-![alt text](img/earth.logo.jpg)
+![alt text](<WhatsApp Image 2024-02-22 at 15.41.48_7322e21a.jpg>)
+
 
 # Project Earthworm
 
@@ -75,9 +76,9 @@ Make sure you using this stable version.
 1. Install Android Studio from [here](https://developer.android.com/studio).
 2. Open Android Studio and set up an Android Virtual Device (AVD) using the AVD Manager.
 
-## usage
+## Usage
 
-- Clone/download the earthworm file from github repo https://github.com/flutter/flutter.git
+- Clone/download the earthworm file from github repo https://github.com/RohithKrishna27/Project_Earthworm_Farmer_Buyer_platform.git
 - Priorly open Android Virtual Device (AVD) in the window.
 - Enter the command **_flutter pub get_** in the vs code terminal.
 - After that Enter **_flutter run_** in your vs code terminal.
@@ -85,39 +86,38 @@ Make sure you using this stable version.
 - And , there you find your virtual device (emulator).
 
 ## **Registration process**
-
-![alt text](img/rig.png)
+  ![alt text](<register 1.png>)
 
     If you are a farmer register as a farmer or else register as a buyer.
 
-![alt text](img/user.rig.png)
-![alt text](img/famrig.png)
+  ![alt text](famrigdd.png)
+  ![alt text](Buyerdd.png)
 
 - ### **How to Sell the crop. ? (farmer)**
 
   1. first you will be finding our user friendly interface.
 
-     ![alt text](img/fam.home.png)
+     ![alt text](fam.homed.png)
 
   2. Click on "Sell your crop" and you will directed ->
 
-     ![alt text](img/cropdetail.png)
+    ![alt text](cropdetail.png)
 
   3. Fill the required details of your produce.
   4. Take the photo pf your argriculture produce. And upload to our application ,like -->
 
-     ![alt text](img/upplodimg.png)
+  ![alt text](upplodimg.png)
 
   5. After uploading the image our AI will verify your crop
 
      condition and quality,example.
 
-     ![alt text](img/quality.png)
+     ![alt text](quality.png)
 
   6. Click on Accept and continue.
   7. you will directed to your order summary , verify it and place the order.
 
-     ![alt text](img/placeorder.png)
+     ![alt text](placeorder.png)
 
      **_Place the order_**
 
@@ -125,11 +125,11 @@ Make sure you using this stable version.
 
   1. click on the place your order section in the home page.
 
-     ![alt text](img/user.home.png)
+     ![alt text](user.home.png)
 
   2. you will be directed to order section wher you can view the multiple agri produce placed by the farmer , you can verify the detail of the crop and book a demo.
 
-     ![alt text](img/userorder.png)
+      ![alt text](userorder.png)
 
 ## Additional Facility
 
@@ -137,7 +137,7 @@ Make sure you using this stable version.
 
   customised AI chatbot bult using google technologies , helps to clear the quiry related to any sectors
 
-  ![alt text](img/chatbot.png)
+  ![alt text](chatbot.png)
 
   Credits to **_Romin Irani_** Google developer associate.
 
@@ -149,51 +149,68 @@ Make sure you using this stable version.
 
   Initiative to introduce farmer to the B2C Business model of the market by building their own brand with help of volunteer student
 
-  ![alt text](img/earthrise.png)
+  ![alt text](earthrise.png)
 
 * **_In-Farm_**
 
   provides farmer with latest news about agriculture technology , government scheme and farming related news .
 
-  ![alt text](img/infarm.png)
+  ![alt text](infarm.png)
 
 * **_Earthworm Finance_**
 
   Where farmer will be lended with small finance but this is in under developement , it will be developed further.
 
-  ![alt text](img/finance.png) .
+   ![alt text](finance.png)
 
 ## **API** used in the project
+
+### Cloud Vision API
+
+| Description               | Documentation Link                                  |
+|---------------------------|------------------------------------------------------|
+| Provides image recognition| [Cloud Vision API Documentation](https://cloud.google.com/vision/docs) |
+
+### Firestore API
+
+| Description                   | Documentation Link                                     |
+|-------------------------------|---------------------------------------------------------|
+| Cloud-based NoSQL database    | [Firestore API Documentation](https://cloud.google.com/firestore/docs/reference/rest)   |
+
+
+       ##### Used in Earthworm Chatbot
 
 ### **AI Platform API**
 
 | Description                                                                                                                       | Documentation Link                                        |
 | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Manages and deploys machine learning models . This API is used for managing and deploying machine learning models on Google Cloud | [AI Platform API Documentation](link_to_docs_ai_platform) |
+| Manages and deploys machine learning models . This API is used for managing and deploying machine learning models on Google Cloud | [AI Platform API Documentation](https://cloud.google.com/ai-platform/docs) |
 
 ### **Google Cloud Storage API**
 
 | Description                                                                                                                                | Documentation Link                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
-| Programmatic access to GCS . This API provides programmatic access to Google Cloud Storage, a scalable and durable object storage service. | [Google Cloud Storage API Documentation](link_to_docs_storage) |
+| Programmatic access to GCS . This API provides programmatic access to Google Cloud Storage, a scalable and durable object storage service. | [Google Cloud Storage API Documentation](https://cloud.google.com/storage/docs/apis) |
 
 ### **Cloud Logging API**
 
 | Description                                                                                                                                 | Documentation Link                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| Stores, searches, and analyzes logs . This API allows you to store, search, and analyze logs generated by your applications on Google Cloud | [Cloud Logging API Documentation](link_to_docs_logging) |
+| Stores, searches, and analyzes logs . This API allows you to store, search, and analyze logs generated by your applications on Google Cloud | [Cloud Logging API Documentation](https://cloud.google.com/logging/docs/reference/v2/rest) |
 
 ### **Cloud Run API**
 
 | Description                                                                                                                                         | Documentation Link                                    |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Deploys and manages containerized applications . This API enables you to deploy and manage containerized applications that are automatically scaled | [Cloud Run API Documentation](link_to_docs_cloud_run) |
+| Deploys and manages containerized applications . This API enables you to deploy and manage containerized applications that are automatically scaled | [Cloud Run API Documentation](https://cloud.google.com/run/docs) |
 
 ### **Cloud Build API**
 
 | Description                                                                                                | Documentation Link                                        |
 | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Builds and tests applications on GCP . This API allows you to build and test applications on Google Cloud. | [Cloud Build API Documentation](link_to_docs_cloud_build) |
+| Builds and tests applications on GCP . This API allows you to build and test applications on Google Cloud. | [Cloud Build API Documentation](https://cloud.google.com/build/docs/api/reference/rest) |
+
+
 
 # **Conclusion**
 
@@ -211,7 +228,7 @@ This release represents an early stage in our development process. Expect occasi
 
 ## How to Report Bugs:
 
-If you encounter any issues, please report them through our email [Rohit](rohithkrishna72726@gmail.com) or [Goutham](gouthampreetham567@gmail.com). Your feedback is invaluable in shaping a robust and user-friendly solution.
+If you encounter any issues, please report them through our email [Rohith](rohithkrishna72726@gmail.com) or [Goutham](gouthampreetham567@gmail.com). Your feedback is invaluable in shaping a robust and user-friendly solution.
 
 ## Our Vision:
 
