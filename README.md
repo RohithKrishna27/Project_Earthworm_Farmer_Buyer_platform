@@ -88,7 +88,7 @@ Make sure you using this stable version.
 ## **Registration process**
   ![alt text](<register 1.png>)
 
-    If you are a farmer register as a farmer or else register as a buyer.
+If you are a farmer register as a farmer or else register as a buyer.
 
   ![alt text](famrigdd.png)
   ![alt text](Buyerdd.png)
@@ -101,7 +101,7 @@ Make sure you using this stable version.
 
   2. Click on "Sell your crop" and you will directed ->
 
-    ![alt text](cropdetail.png)
+     ![alt text](cropdetail.png)
 
   3. Fill the required details of your produce.
   4. Take the photo pf your argriculture produce. And upload to our application ,like -->
@@ -178,7 +178,7 @@ Make sure you using this stable version.
 | Cloud-based NoSQL database    | [Firestore API Documentation](https://cloud.google.com/firestore/docs/reference/rest)   |
 
 
-       ##### Used in Earthworm Chatbot
+ ## API used in Earthworm Chatbot
 
 ### **AI Platform API**
 
