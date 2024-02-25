@@ -123,7 +123,7 @@ class _FarmerHomeScreenState extends State<BuyerHomeScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => SellCropScreen()),
+                            builder: (context) => OrderScreen()),
                       );
                     },
                   ),

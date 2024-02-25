@@ -141,7 +141,7 @@ class _RegisterFarmerScreenState extends State<RegisterFarmerScreen> {
         context: context,
         builder: (context) => AlertDialog(
           title: Text('Success'),
-          content: Text('Account created successfully.'),
+          content: Text('Account created successfully. Tip: Earthworm chatbot initially takes time to load; please be patient'),
           actions: [
             TextButton(
               onPressed: () {
@@ -167,7 +167,7 @@ class _RegisterFarmerScreenState extends State<RegisterFarmerScreen> {
         context: context,
         builder: (context) => AlertDialog(
           title: Text('Error'),
-          content: Text('An error occurred during registration. Please try again.'),
+          content: Text('An error occurred during registration. Please see the terminal for the error.'),
           actions: [
             TextButton(
               onPressed: () {

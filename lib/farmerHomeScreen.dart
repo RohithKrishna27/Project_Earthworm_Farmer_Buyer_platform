@@ -145,7 +145,7 @@ class _FarmerHomeScreenState extends State<FarmerHomeScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => AboutUsScreen()),
+                              builder: (context) => AboutEarthworm()),
                         );
                       },
                     ),
