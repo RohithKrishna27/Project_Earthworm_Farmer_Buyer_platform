@@ -175,7 +175,7 @@ class _RegisterBuyerScreenState extends State<RegisterBuyerScreen> {
         context: context,
         builder: (context) => AlertDialog(
           title: Text('Error'),
-          content: Text('An error occurred during registration. Please try again.'),
+          content: Text('An error occurred during registration. Please see the terminal for the error.'),
           actions: [
             TextButton(
               onPressed: () {
