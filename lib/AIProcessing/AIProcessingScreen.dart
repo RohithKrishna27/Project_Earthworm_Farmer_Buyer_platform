@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-
 class AIProcessingScreen extends StatelessWidget {
   final String imageUrl;
   final String cropName;
@@ -27,7 +26,6 @@ class AIProcessingScreen extends StatelessWidget {
     required this.place,
     required this.phoneNumber,
     required this.orderId,
-
   }) : super(key: key);
 
   @override
@@ -56,8 +54,8 @@ class AIProcessingScreen extends StatelessWidget {
                     height: 300,
                     decoration: BoxDecoration(
                       border: Border.all(
-                        color: Colors.black, 
-                        width: 2.0, 
+                        color: Colors.black,
+                        width: 2.0,
                       ),
                     ),
                     child: ClipRRect(
@@ -74,24 +72,24 @@ class AIProcessingScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 20),
-GestureDetector(
-  onTap: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => AIQualityScreen(),
-      ),
-    );
-  },
-  child: Text(
-    'View Quality Details',
-    style: TextStyle(
-      fontSize: 16,
-      color: Colors.black,
-      decoration: TextDecoration.underline,
-    ),
-  ),
-),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AIQualityScreen(),
+                        ),
+                      );
+                    },
+                    child: Text(
+                      'View Quality Details',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ),
                   SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () async {
@@ -140,7 +138,8 @@ GestureDetector(
       ),
     );
   }
-//Cloud Vision API for AI Quality Anaysis
+
+  // Cloud Vision API for AI Quality Analysis with Label Detection
   Future<Map<String, dynamic>> analyzeImage(String imageUrl) async {
     final apiKey = '${dotenv.env["apikey"]}';
     final apiUrl = 'https://vision.googleapis.com/v1/images:annotate';
@@ -152,7 +151,7 @@ GestureDetector(
             'source': {'imageUri': imageUrl}
           },
           'features': [
-            {'type': 'CROP_HINTS'}
+            {'type': 'LABEL_DETECTION'}
           ],
         },
       ],
@@ -172,21 +171,36 @@ GestureDetector(
           'Failed to analyze image. Status code: ${response.statusCode}');
     }
   }
-// Calculating AI Score
+
+  // Calculating AI Score based on Label Detection results
   double calculateQualityScore(Map<String, dynamic> responseData) {
     try {
-      final cropData =
-          responseData['responses'][0]['cropHintsAnnotation']['cropHints'];
+      final labelAnnotations = responseData['responses'][0]['labelAnnotations'];
 
-      double totalScore = 0;
-      int totalFactors = 0;
+      if (labelAnnotations != null && labelAnnotations.isNotEmpty) {
+        // For simplicity, let's assume the first label annotation represents the crop
+        final cropLabel = labelAnnotations[0]['description'];
+        final score = labelAnnotations[0]['score'];
 
-      for (var hint in cropData) {
-        totalScore += hint['confidence'] ?? 0;
-        totalFactors++;
+        // Customize your quality score calculation based on the crop label and score
+        double qualityScore = 0.0;
+
+        // You can add your own logic to calculate the quality score based on the crop label and score
+        // Example: Assign a score based on specific crop labels or conditions
+        if (cropLabel == 'Healthy Crop' && score > 0.8) {
+          qualityScore = 10.0;
+        } else if (cropLabel == 'Moderate Crop' && score > 0.6) {
+          qualityScore = 7.0;
+        } else {
+          // Default score if conditions are not met
+          qualityScore = 5.0;
+        }
+
+        return qualityScore;
+      } else {
+        // Default score if label annotations are not available
+        return 0.0;
       }
-
-      return totalFactors > 0 ? (totalScore / totalFactors) * 10 : 0.0;
     } catch (e) {
       print('Error calculating quality score: $e');
       return 0.0;
