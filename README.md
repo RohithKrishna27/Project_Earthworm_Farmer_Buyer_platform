@@ -1,3 +1,5 @@
+##    Due to a misunderstanding, one of our responses in the final submission form for the solution challenge was incorrect regarding the AICropScore calculation. We apologize for the mistake and have now updated the code. Thank you.
+
 ![alt text](<WhatsApp Image 2024-02-22 at 15.41.48_7322e21a.jpg>)
 
 
