@@ -134,18 +134,6 @@ If you are a farmer register as a farmer or else register as a buyer.
 
 ## Additional Facility
 
-- **_Earthwarm Chatbot_**
-
-  customised AI chatbot bult using google technologies , helps to clear the quiry related to any sectors
-
-  ![alt text](chatbot.png)
-
-  Credits to **_Romin Irani_** Google developer associate.
-
-  https://codelabs.developers.google.com/llm-chat-app-flask#5
-
-  click on chatbot to access earthworm chatbot code [chatbot](../../../../Downloads/run/Project_Earthworm_Farmer_Buyer_platform-main/lib/WeView/WebViewScreen.dart)
-
 * **_Earthworm Rise_**
 
   Initiative to introduce farmer to the B2C Business model of the market by building their own brand with help of volunteer student
